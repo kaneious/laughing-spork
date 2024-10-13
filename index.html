@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dedik.one</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            margin: 0;
+            padding: 0;
+            color: #ccc;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 24px;
+            color: #fff;
+        }
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #ccc;
+            font-weight: 500;
+        }
+        .contact-btn {
+            background-color: #fff;
+            color: #000;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 50px;
+            font-weight: 700;
+            color: #fff;
+        }
+        .subtitle {
+            text-align: center;
+            color: #999;
+            margin-bottom: 50px;
+            font-size: 18px;
+        }
+        .plans {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        .plan {
+            background-color: #fff;
+            color: #000;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            position: relative;
+        }
+        .plan h2 {
+            font-size: 24px;
+            margin: 0;
+            font-weight: 600;
+        }
+        .plan .price {
+            font-size: 36px;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+        .plan .specs {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }
+        .plan ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .plan li {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        .plan li::before {
+            content: "✓";
+            color: #4CAF50;
+            margin-right: 10px;
+        }
+        .order-btn {
+            display: block;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+        .corner-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 30px;
+            height: 30px;
+            background-color: #999;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+        .faq {
+            margin-top: 50px;
+        }
+        .faq-item {
+            background-color: #fff;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        .faq-question {
+            padding: 15px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 500;
+            color: #000;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+        }
+        .faq-answer {
+            display: none;
+            padding: 15px;
+            font-size: 14px;
+            color: #000;
+        }
+        footer {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-top: 1px solid #555;
+            font-size: 14px;
+        }
+        .footer-section {
+            flex: 1;
+        }
+        .footer-section h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer-section li {
+            margin-bottom: 5px;
+        }
+        .footer-section a {
+            color: #999;
+            text-decoration: none;
+        }
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+        .abuse-ipdb {
+            display: flex;
+            align-items: center;
+        }
+        .abuse-ipdb img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">dedik.one</div>
+            <nav>
+                <a href="#" class="contact-btn">Contact</a>
+            </nav>
+        </header>
+
+        <h1>dedik.one</h1>
+        <p class="subtitle">Offshore servers for all of your needs :)</p>
+
+        <div class="plans">
+            <div class="plan">
+                <h2>Onium</h2>
+                <div class="price">3$<span>/mo</span></div>
+                <div class="specs">2x Xeon E5-2697v2</div>
+                <ul>
+                    <li>12c/24t</li>
+                    <li>24GB RAM</li>
+                    <li>100GB SSD</li>
+                    <li>DDoS Allowed</li>
+                    <li>1GBit Unmetered</li>
+                </ul>
+                <a href="#" class="order-btn">Order now</a>
+                <div class="corner-icon"></div>
+            </div>
+            <div class="plan">
+                <h2>Aladium</h2>
+                <div class="price">5$<span>/mo</span></div>
+                <div class="specs">2x Xeon E5-2698v4</div>
+                <ul>
+                    <li>32c/48t</li>
+                    <li>64GB RAM</li>
+                    <li>200GB SSD</li>
+                    <li>DDoS Allowed</li>
+                    <li>1GBit Unmetered</li>
+                </ul>
+                <a href="#" class="order-btn">Order now</a>
+                <div class="corner-icon"></div>
+            </div>
+            <div class="plan">
+                <h2>Iridium</h2>
+                <div class="price">8$<span>/mo</span></div>
+                <div class="specs">2x Xeon E5-2698v4</div>
+                <ul>
+                    <li>48c/64t</li>
+                    <li>96GB RAM</li>
+                    <li>300GB SSD</li>
+                    <li>DDoS Allowed</li>
+                    <li>1GBit Unmetered</li>
+                </ul>
+                <a href="#" class="order-btn">Order now</a>
+                <div class="corner-icon"></div>
+            </div>
+            <div class="plan">
+                <h2>Axium</h2>
+                <div class="price">12$<span>/mo</span></div>
+                <div class="specs">2x Xeon E5-2698v4</div>
+                <ul>
+                    <li>64c/80t</li>
+                    <li>120GB RAM</li>
+                    <li>450GB SSD</li>
+                    <li>DDoS Allowed</li>
+                    <li>1GBit Unmetered</li>
+                </ul>
+                <a href="#" class="order-btn">Order now</a>
+                <div class="corner-icon"></div>
+            </div>
+        </div>
+
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-question">What content is not allowed on my server(s)?</div>
+                <div class="faq-answer">Child porn / Drugs or weapon stores or such / Terrorism or promoting hate speech in any form / Spamhaus - Spam Causing Blacklisting of an IP at www.spamhaus.org for Malicious Activity</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">I have ordered a new server but not yet received details?</div>
+                <div class="faq-answer">You just need to wait. Servers are issued within 6 to 24 hours.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Do you provide ddos protection?</div>
+                <div class="faq-answer">Yes, all servers are protected from DDoS attacks.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What if the server got banned?</div>
+                <div class="faq-answer">We will do a fast replacement of your server.</div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-section">
+                <h3>dedik.one</h3>
+                <p>dedik.one, all rights reserved.</p>
+            </div>
+            <div class="footer-section">
+            </div>
+            <div class="footer-section">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="https://musician_000">Telegram</a></li>
+                    <li><a href="https://status.dedik.one">Status</a></li>
+                </ul>
+            </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
