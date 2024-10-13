@@ -43,30 +43,33 @@
             border-radius: 20px;
         }
         h1 {
-            font-size: 48px;
+            font-size: 36px;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 30px;
             font-weight: 700;
             color: #fff;
         }
         .subtitle {
             text-align: center;
             color: #999;
-            margin-bottom: 50px;
-            font-size: 18px;
+            margin-bottom: 30px;
+            font-size: 16px;
         }
         .plans {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
-            gap: 30px;
+            gap: 20px;
         }
         .plan {
             background-color: #fff;
             color: #000;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
-            width: 300px;
+            width: 100%;
+            max-width: 300px;
             position: relative;
+            margin-bottom: 20px;
         }
         .plan h2 {
             font-size: 24px;
@@ -74,7 +77,7 @@
             font-weight: 600;
         }
         .plan .price {
-            font-size: 36px;
+            font-size: 32px;
             margin: 10px 0;
             font-weight: 700;
         }
@@ -117,7 +120,7 @@
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
         .faq {
-            margin-top: 50px;
+            margin-top: 30px;
         }
         .faq-item {
             background-color: #fff;
@@ -144,15 +147,13 @@
             color: #000;
         }
         footer {
-            margin-top: 50px;
-            display: flex;
-            justify-content: space-between;
+            margin-top: 30px;
             padding: 20px 0;
             border-top: 1px solid #555;
             font-size: 14px;
         }
         .footer-section {
-            flex: 1;
+            margin-bottom: 20px;
         }
         .footer-section h3 {
             font-size: 16px;
@@ -183,6 +184,43 @@
             height: 24px;
             margin-right: 10px;
         }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            nav {
+                margin-top: 10px;
+            }
+            nav a {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+            h1 {
+                font-size: 28px;
+                margin-top: 20px;
+            }
+            .subtitle {
+                font-size: 14px;
+                margin-bottom: 20px;
+            }
+            .plan {
+                padding: 15px;
+            }
+            .plan h2 {
+                font-size: 20px;
+            }
+            .plan .price {
+                font-size: 28px;
+            }
+            footer {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
@@ -209,7 +247,7 @@
                     <li>DDoS Allowed</li>
                     <li>10GBit Unmetered</li>
                 </ul>
-                <a href="https://musician_000" class="order-btn">Order now</a>
+                <a href="https://musician_000" class="order-btn">Order</a>
                 <div class="corner-icon"></div>
             </div>
             <div class="plan">
@@ -223,7 +261,7 @@
                     <li>DDoS Allowed</li>
                     <li>10GBit Unmetered</li>
                 </ul>
-                <a href="https://musician_000" class="order-btn">Order now</a>
+                <a href="https://musician_000" class="order-btn">Order</a>
                 <div class="corner-icon"></div>
             </div>
             <div class="plan">
@@ -237,7 +275,7 @@
                     <li>DDoS Allowed</li>
                     <li>10GBit Unmetered</li>
                 </ul>
-                <a href="https://musician_000" class="order-btn">Order now</a>
+                <a href="https://musician_000" class="order-btn">Order</a>
                 <div class="corner-icon"></div>
             </div>
             <div class="plan">
@@ -251,7 +289,21 @@
                     <li>DDoS Allowed</li>
                     <li>10GBit Unmetered</li>
                 </ul>
-                <a href="https://musician_000" class="order-btn">Order now</a>
+                <a href="https://musician_000" class="order-btn">Order</a>
+                <div class="corner-icon"></div>
+            </div>
+                <div class="plan">
+                    <h2>Custom</h2>
+                    <div class="price">?$<span>/mo</span></div>
+                    <div class="specs">Intel Xeon</div>
+                    <ul>
+                        <li>Up to 96c</li>
+                        <li>Up to 256GB RAM</li>
+                        <li>Up to 1TB SSD</li>
+                        <li>DDoS Allowed</li>
+                        <li>10GBit Unmetered</li>
+                </ul>
+                <a href="https://musician_000" class="order-btn">Customize</a>
                 <div class="corner-icon"></div>
             </div>
         </div>
@@ -281,14 +333,11 @@
                 <p>dedik.one, all rights reserved.</p>
             </div>
             <div class="footer-section">
-            </div>
-            <div class="footer-section">
                 <h3>Information</h3>
                 <ul>
                     <li><a href="https://musician_000">Telegram</a></li>
                     <li><a href="https://status.dedik.one">Status</a></li>
                 </ul>
-            </div>
             </div>
         </footer>
     </div>
